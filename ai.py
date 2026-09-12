@@ -20,7 +20,7 @@ async def generate_response(user_text: str) -> str:
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_text}
             ],
-            model="llama-3.1-8b-instant",  # A fast and reliable model for simple chat
+            model="llama3-8b-8192",  # Standard, highly available model
             temperature=0.7,
             max_tokens=300
         )
